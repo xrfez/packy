@@ -79,7 +79,7 @@ template packDep*(file: string, folder: string = "",
   doAssert isValidFilename(dependency.fileName)
 
   # compile time create installer file
-  const srcFile = instantiationInfo().filename[0..^5]
+  const srcFile = instantiationInfo(fullPaths = true).filename[0..^5]
   const installFile = srcFile & "_installer.nim"
   when not fileExists(installFile):
     static: writeFile(installFile, "import std/os, packy \n" &
