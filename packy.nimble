@@ -1,6 +1,6 @@
 # Package
 
-version       = "0.1.0"
+version       = "0.1.1"
 author        = "Joshua Fenner"
 description   = "Pack dependencies into the compiled binary.  Provides a system for handling .dll files."
 license       = "Apache-2.0"
